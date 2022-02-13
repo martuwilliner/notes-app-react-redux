@@ -1,0 +1,46 @@
+.note__main{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+}
+.note__appbar{
+    align-items: center;
+    background-color: $primary;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+}
+
+.note__content{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+}
+.note__title-input, .note__text{
+    border: none;
+
+    &:focus{
+        outline: none;
+    }
+}
+.note__title-input{
+    color: $dark-grey;
+    font-size:25px;
+    font-weight:700;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $dark-grey;
+}
+
+.note__text{
+    border: none;
+    color: $dark-grey;
+    font-size: 20px;
+    flex: 1 1 auto;
+    resize: none;
+}
+.note__image img{
+    box-shadow: 5px 5px $dark-grey;
+    max-height: 150px;
+}
